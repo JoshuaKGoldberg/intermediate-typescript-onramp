@@ -1,0 +1,20 @@
+// You don't need to peek at this file to follow along in this talk!
+// I've put comments inline if you're curious.
+// The full tsconfig.json docs are at:
+// https://www.typescriptlang.org/tsconfig
+{
+  "compilerOptions": {
+    // Tells TypeScript that 'null' and 'undefined' don't count as instances of other types.
+    // This is an old behavior that many languages started with but we now know to be bad.
+    // Search "billion dollar mistake" to hear about people's regrets!
+    "strictNullChecks": true,
+
+    // This "target" refers to the output .js files that tsc emits.
+    // TypeScript will "downpile" (transpile down) code that uses new JS features to old JS.
+    // For example, it would turn 'let x = 1;' to 'var x = 1;' in "target": "es3"
+    // This ESNext target asks it to not do that.
+    "target": "esnext"
+  },
+  // TypeScript will look at all files under "src/" that end with ".ts" or ".tsx".
+  "include": ["./src/**/*.ts"]
+}

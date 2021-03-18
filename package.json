@@ -1,0 +1,17 @@
+{
+  "author": "Josh Goldberg <me@joshuakgoldberg.com>",
+  "dependencies": {
+    "typescript": "^4.2.3"
+  },
+  "description": "Companion code for my Intermediate TypeScript talk for onramp.io ✨",
+  "license": "MIT",
+  "name": "intermediate-typescript-onramp",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "version": "1.0.0",
+  "devDependencies": {
+    "@types/lodash": "^4.14.168"
+  }
+}
